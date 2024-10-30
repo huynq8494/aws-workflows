@@ -11,5 +11,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 20
+      - name: Install dependencies
+        run: |
+          npm install @actions/core
       - name: Run custom action
         uses: huynq8494/aws-actions@main
